@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+    <div id="content-stock">
+        <table id="Table" class="u-full-width">
+            <thead id="TableHead">
+            <tr>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Value</th>
+                <th>Delete/Edit</th>
+                
+            </tr>
+            </thead>
+
+            <tbody  id="TableBody">
+
+ 
+            </tbody>
+        </table>
+
+      <!-- The above form looks like this -->
+            <form id="AddaStock" style="display:none" >
+                    <div class="row">
+                    <div class="four columns">
+                    <label>Add a Stock</label>
+                    <input class="u-full-width" type="text" placeholder="Enter the Stock Symbol" id="StockTicker">
+                    <input class="u-full-width" type="text" placeholder="Enter the Quantity" id="StockQty">
+                    <input class="u-full-width" type="text" placeholder="Enter the Country" id="country">
+      
+                </div>
+                <!-- <div class="six columns">
+                    <label for="exampleRecipientInput">Reason for contacting</label>
+                    <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="Option 1">Questions</option>
+                    <option value="Option 2">Admiration</option>
+                    <option value="Option 3">Can I get your number?</option>
+                    </select>
+                </div> -->
+                </div>
+                    <div class="container four columns">
+                        <div class="row">
+                        <div class="col text-center">
+            
+                            <input id="submit-btn" class="btn button-primary" type="button" value="Submit">
+                            <input id="cancel-btn" class="btn button-primary" type="button" value="Cancel">
+                    
+                        </div>
+                        </div>
+                    </div>
+            </form>
+        
+        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+        
+        <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+        </div>
+      <button id="AddStock">Add a Stock</button>
+    </div>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+<script src="app.js"></script>
+</html>
